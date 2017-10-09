@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ifentify</title>
+</head>
+<body>
+
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script src="path/to/dist/jquery.facedetection.min.js"></script> 
+<img id="picture" src="face.jpg">
+
+<script>
+    $('#picture').faceDetection({
+        complete: function (faces) {
+            console.log(faces);
+        }
+    });
+</script> 
+
+
+</body>
+</html>
+
+
+
